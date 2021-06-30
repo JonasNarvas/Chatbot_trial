@@ -1,5 +1,5 @@
 const banco = require("../banco");
-const stages = require('../stages')
+const stages = require('../stages');
 
 function execute(user, msg){
     if(msg === "*"){
@@ -8,9 +8,9 @@ function execute(user, msg){
     }
 
     if(msg === "#"){
-        banco.db[user].stage = 4;
+        banco.db[user].stage = 5;
         
-        return stages.step[4].obj.execute(user,"");
+        return stages.step[5].obj.execute(user,"");
     }
     return ["```Digite # para continuar ou * para cancelar```"
     ,`Confirmar endereço de entrega : \n ${msg}`

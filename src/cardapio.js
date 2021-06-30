@@ -1,7 +1,7 @@
 const cardapio = {
     1:{
         descricao:"X-Burguer",
-        preco:9.90,
+        preco: 9.90,
     },
     2:{
         descricao:"Dogão",
@@ -10,6 +10,10 @@ const cardapio = {
     3:{
         descricao:"Coca 2L",
         preco: 12.99,
+    },
+    4:{
+        descricao:"X-Infarto",
+        preco: 40.00,
     },
 };
 

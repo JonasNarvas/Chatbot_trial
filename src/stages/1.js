@@ -3,12 +3,12 @@ const banco = require("../banco");
 
 function execute(user, msg){
 
-    if(msg =="*"){
+    if(msg ==="*"){
         banco.db[user].stage = 0;
         return["pedido cancelado com sucesso"];
     }
 
-    if(msg =="#"){
+    if(msg ==="#"){
         banco.db[user].stage = 2 ;
         return ["Estamos fechando seu pedido, ok?"];
     }

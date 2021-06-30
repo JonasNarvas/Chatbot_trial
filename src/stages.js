@@ -19,6 +19,10 @@ var stages = {
       descricao:"Encerramento",
       obj: require("./stages/4"),
     },
+    5:{
+      descricao:"Pagamento",
+      obj: require("./stages/5"),
+    },
   };
 
 

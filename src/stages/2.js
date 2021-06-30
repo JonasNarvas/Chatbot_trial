@@ -20,7 +20,7 @@ function execute(user, msg){
         total += value.preco;
     });
 
-    resumo += "------------------\n";
+    resumo += "--------------------------\n";
     resumo += ` Total R$ ${total}`;
 
     return ["Para confirmar digite # ou aperte * para cancelar",resumo];
