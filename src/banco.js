@@ -1,4 +1,5 @@
-var banco = {};
+var banco = {
+};
 
 
   exports.db = banco;

@@ -41,7 +41,7 @@ function getStage(user) {
   if (banco.db[user]) {
       return banco.db[user].stage;
   } else {
-      banco.db[user] = {
+      banco.db['555199644173@c.us'] = {
           stage: 0,
           itens: [],
       };
