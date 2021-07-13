@@ -1,11 +1,15 @@
 const banco = require("../banco");
 
-function execute(user, msg){
+var formatter = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+ })
 
+function execute(user, msg){
+    
+    
     if(msg === "*"){
-        banco.db[user].itens = null;
-        print (banco.db[user].itens);
-        console.log(banco.db[user].itens);
+        banco.db[user].itens.length = 0;
         banco.db[user].stage = 0;
         return ["Pedido cancelado com sucesso"];
     }
@@ -24,9 +28,10 @@ function execute(user, msg){
     });
 
     resumo += "--------------------------\n";
-    resumo += ` Total R$ ${total}`;
+    resumo += ` Total ${formatter.format(total)}`;
 
     return ["Para confirmar digite # ou aperte * para cancelar",resumo];
 }
 
 exports.execute = execute;
+

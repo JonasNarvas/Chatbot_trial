@@ -21,7 +21,7 @@ venom
 
 function start(client) {
   client.onMessage((message) => {
-    console.log(message);
+    // console.log(message);
     let resp = stages.step[getStage(message.from)].obj.execute(
       message.from,
        message.body,

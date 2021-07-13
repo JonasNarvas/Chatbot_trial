@@ -4,6 +4,7 @@ const banco = require("../banco");
 function execute(user, msg){
 
     if(msg ==="*"){
+        banco.db[user].itens.length = 0;
         banco.db[user].stage = 0;
         return["pedido cancelado com sucesso"];
     }
