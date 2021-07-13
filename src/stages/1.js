@@ -16,16 +16,18 @@ function execute(user, msg){
 
     if(!cardapio.menu[msg]){
         return [
-            "```Digite # para finalizar ou * para cancelar```",
-            " Código inválido, digite o código do produto que você deseja"
+            " Código inválido, digite o código do produto que você deseja",
+            "```Digite # para finalizar ou * para cancelar```"
+            
         ];
     }
     
     banco.db[user].itens.push(cardapio.menu[msg]);
 
     return [
-        "```Digite # para finalizar ou * para cancelar, se deseja adicionar outro produto ao carrinho insira o código do produto```", 
         `Item(${cardapio.menu[msg].descricao}) adicionado com sucesso`,
+        "```Digite # para finalizar ou * para cancelar, se deseja adicionar outro produto ao carrinho insira o código do produto```", 
+        
      ];
 }
 

@@ -11,7 +11,7 @@ function execute(user,msg){
 
     banco.db[user].stage = 1;
 
-    return [menu, "Olá, sou uma assistente virtual. Para fazer o pedido basta enviar o codigo do produto, um por vez"];
+    return ["Olá, sou uma assistente virtual. Para fazer o pedido basta enviar o codigo do produto, um por vez", menu];
 }
 
 exports.execute = execute;

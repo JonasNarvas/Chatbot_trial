@@ -16,8 +16,8 @@ function execute(user, msg){
         
         return stages.step[5].obj.execute(user,"");
     }
-    return ["```Digite # para continuar ou * para cancelar o pedido```"
-    ,`Endereço de entrega : \n ${msg}\n para corrigir o endereço digite: "!"`
+    return [`Endereço de entrega : \n ${msg}\n para corrigir o endereço digite: "!"`,
+    "```Digite # para continuar ou * para cancelar o pedido```"
     ];
 }
 

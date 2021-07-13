@@ -30,7 +30,7 @@ function execute(user, msg){
     resumo += "--------------------------\n";
     resumo += ` Total ${formatter.format(total)}`;
 
-    return ["Para confirmar digite # ou aperte * para cancelar",resumo];
+    return [resumo,"Para confirmar digite # ou aperte * para cancelar"];
 }
 
 exports.execute = execute;

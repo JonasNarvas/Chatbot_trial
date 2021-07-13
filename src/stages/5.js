@@ -20,6 +20,7 @@ function execute (user, msg) {
         return ["Digite a Bandeira do cartão para levarmos a máquina de acordo :"];
     }
     if (msg==="3") {
+        Passo++;
         return ["Chave do PIX: 000.000.000-00"]
     }
     return ["Escolha a forma de pagamento: \n 1- Dinheiro\n 2- Cartão\n 3- PIX"];
