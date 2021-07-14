@@ -5,7 +5,7 @@ const banco = require('./banco')
 const stages = require('./stages')
 
 
-// let resp = stages.step[getStage("555197773164@c.us")].obj.execute();
+// let resp = stages.step[getStage(user)].obj.execute();
 //     for (let index = 0; index < Array(resp).length; index++) {
 //       const element = Array(resp)[index];
 //       console.log(element);
