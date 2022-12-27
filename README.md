@@ -1,2 +1,3 @@
 # Chatbot_trial
- Chatbot para WhatsApp v1.0
+ Chatbot para WhatsApp. Projeto pessoal para fazer testes com Node js.
+ Descontinuado.
